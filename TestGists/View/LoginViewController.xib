@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="TestGists" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="O5k-Y9-L7R" id="D73-74-uZg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="O5k-Y9-L7R">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="D6t-iX-NKT">
+                    <rect key="frame" x="20" y="293.5" width="374" height="309"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FJb-LP-qcg">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="199"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="FJb-LP-qcg" secondAttribute="height" multiplier="15:8" id="N9A-e9-bVX"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3o-gb-0j6">
+                            <rect key="frame" x="0.0" y="249" width="374" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="87n-so-kQA"/>
+                            </constraints>
+                            <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Login"/>
+                            <connections>
+                                <action selector="onLoginClick:" destination="-1" eventType="touchUpInside" id="l0T-Bx-i62"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="LLe-n0-SvS"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LLe-n0-SvS" firstAttribute="trailing" secondItem="D6t-iX-NKT" secondAttribute="trailing" constant="20" id="POp-3F-JyV"/>
+                <constraint firstItem="D6t-iX-NKT" firstAttribute="leading" secondItem="O5k-Y9-L7R" secondAttribute="leading" constant="20" id="Tjm-Tv-9Sd"/>
+                <constraint firstItem="D6t-iX-NKT" firstAttribute="centerY" secondItem="O5k-Y9-L7R" secondAttribute="centerY" id="hOR-4d-oKh"/>
+                <constraint firstItem="D6t-iX-NKT" firstAttribute="centerX" secondItem="O5k-Y9-L7R" secondAttribute="centerX" id="kqP-DF-o5g"/>
+            </constraints>
+            <point key="canvasLocation" x="32" y="50"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="256" height="256"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
