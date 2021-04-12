@@ -30,8 +30,7 @@ class DetailGistViewModel: NSObject {
                 self.model = gist
                 self.parentController.requestSuccess(model: self.model)
             case .failure:
-                self.parentController.requestFailure()
-                
+                self.parentController.requestFailure()                
             }
         }
         

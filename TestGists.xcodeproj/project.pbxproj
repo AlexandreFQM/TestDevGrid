@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1901C6A69BC35E33091A955B /* Pods_TestGistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B9FC584B75D16B2A1A11E7 /* Pods_TestGistsTests.framework */; };
+		4A30F7062624A0F90028461B /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30F7002624A0F90028461B /* AppDependencyContainer.swift */; };
+		4A30F7072624A0F90028461B /* RemoteOAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30F7012624A0F90028461B /* RemoteOAuthClient.swift */; };
+		4A30F7082624A0F90028461B /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30F7022624A0F90028461B /* DeepLinkHandler.swift */; };
+		4A30F7092624A0F90028461B /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30F7032624A0F90028461B /* HttpRequest.swift */; };
+		4A30F70A2624A0F90028461B /* LocalOauthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30F7042624A0F90028461B /* LocalOauthClient.swift */; };
+		4A30F70B2624A0F90028461B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30F7052624A0F90028461B /* HTTPClient.swift */; };
 		4AA27787261B9B7D009A0966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA27786261B9B7D009A0966 /* AppDelegate.swift */; };
 		4AA2778B261B9B7D009A0966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2778A261B9B7D009A0966 /* ViewController.swift */; };
 		4AA2778E261B9B7D009A0966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2778C261B9B7D009A0966 /* Main.storyboard */; };
@@ -66,6 +72,12 @@
 		0EB31BB0FD90D7AE7335CBD3 /* Pods-TestGists-TestGistsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGists-TestGistsUITests.release.xcconfig"; path = "Target Support Files/Pods-TestGists-TestGistsUITests/Pods-TestGists-TestGistsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		205339E8B39E797431392E29 /* Pods-TestGistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGistsTests.release.xcconfig"; path = "Target Support Files/Pods-TestGistsTests/Pods-TestGistsTests.release.xcconfig"; sourceTree = "<group>"; };
 		456DBB7FFABAC2FB4480D321 /* Pods-TestGists-TestGistsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGists-TestGistsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestGists-TestGistsUITests/Pods-TestGists-TestGistsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A30F7002624A0F90028461B /* AppDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		4A30F7012624A0F90028461B /* RemoteOAuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteOAuthClient.swift; sourceTree = "<group>"; };
+		4A30F7022624A0F90028461B /* DeepLinkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		4A30F7032624A0F90028461B /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		4A30F7042624A0F90028461B /* LocalOauthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalOauthClient.swift; sourceTree = "<group>"; };
+		4A30F7052624A0F90028461B /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4AA27783261B9B7D009A0966 /* TestGists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA27786261B9B7D009A0966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA2778A261B9B7D009A0966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +153,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A30F6FF2624A0F90028461B /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				4A30F7002624A0F90028461B /* AppDependencyContainer.swift */,
+				4A30F7012624A0F90028461B /* RemoteOAuthClient.swift */,
+				4A30F7022624A0F90028461B /* DeepLinkHandler.swift */,
+				4A30F7032624A0F90028461B /* HttpRequest.swift */,
+				4A30F7042624A0F90028461B /* LocalOauthClient.swift */,
+				4A30F7052624A0F90028461B /* HTTPClient.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		4AA2777A261B9B7D009A0966 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +191,7 @@
 		4AA27785261B9B7D009A0966 /* TestGists */ = {
 			isa = PBXGroup;
 			children = (
+				4A30F6FF2624A0F90028461B /* Dependencies */,
 				4AC42397261EA660009E01DC /* Font */,
 				4AC422DF261E7AE9009E01DC /* Extension */,
 				4AA27786261B9B7D009A0966 /* AppDelegate.swift */,
@@ -555,19 +581,25 @@
 				4AC423CB261EB53D009E01DC /* DetailsGistItemViewController.swift in Sources */,
 				4AC422E1261E7B06009E01DC /* DateFormatterExtension.swift in Sources */,
 				4AC42455261F87B8009E01DC /* Encodable.swift in Sources */,
+				4A30F70B2624A0F90028461B /* HTTPClient.swift in Sources */,
+				4A30F7092624A0F90028461B /* HttpRequest.swift in Sources */,
 				4AA27787261B9B7D009A0966 /* AppDelegate.swift in Sources */,
 				4AC423C1261EB1A6009E01DC /* QRData.swift in Sources */,
+				4A30F70A2624A0F90028461B /* LocalOauthClient.swift in Sources */,
 				4AC423BC261EB16F009E01DC /* QRScannerView.swift in Sources */,
 				4AC42286261E3D2A009E01DC /* NetworkConfig.swift in Sources */,
 				4AC423E0261F6AFC009E01DC /* GistsCommentModelResponse.swift in Sources */,
+				4A30F7062624A0F90028461B /* AppDependencyContainer.swift in Sources */,
 				4AC42426261F8365009E01DC /* LoginViewController.swift in Sources */,
 				4AC423C6261EB1D1009E01DC /* UIViewController+Alert.swift in Sources */,
 				4AC4229E261E4027009E01DC /* API.swift in Sources */,
+				4A30F7082624A0F90028461B /* DeepLinkHandler.swift in Sources */,
 				4AC423D3261F3733009E01DC /* DetailGistViewModel.swift in Sources */,
 				4AC422CB261E6534009E01DC /* SceneDelegate.swift in Sources */,
 				4AC4242B261F8383009E01DC /* OAuthService.swift in Sources */,
 				4AC4236F261E9D1A009E01DC /* GistItemTableViewCell.swift in Sources */,
 				4AC423EA261F6D91009E01DC /* GistCommentTableViewCell.swift in Sources */,
+				4A30F7072624A0F90028461B /* RemoteOAuthClient.swift in Sources */,
 				4AC422AC261E449A009E01DC /* GistsModelResponse.swift in Sources */,
 				4AC422C0261E4850009E01DC /* ViewControllerViewModel.swift in Sources */,
 				4AC4239C261EAAD1009E01DC /* QRScannerViewController.swift in Sources */,

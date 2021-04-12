@@ -7,6 +7,7 @@
 
 import UIKit
 import SafariServices
+import KeychainSwift
 
 class LoginViewController: UIViewController {
     let oAuthService: OAuthService
@@ -39,8 +40,9 @@ class LoginViewController: UIViewController {
                 switch result {
                 case .success(let tokenBag):
                     
-                    UserDefaults.standard.set(tokenBag.accessToken, forKey: "tokenKey")
-                    
+                    let keychain = KeychainSwift()
+                    keychain.set(tokenBag.accessToken, forKey: "tokenKey")                    
+                                        
                     if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController {
                         let navigation  = UINavigationController(rootViewController:viewController)
                         navigation.modalPresentationStyle = .fullScreen

@@ -7,6 +7,7 @@
 
 import Foundation
 import Moya
+import KeychainSwift
 
 public enum DGTargetType {
     case gistPublic(perPage: Int)
@@ -16,6 +17,7 @@ public enum DGTargetType {
 }
 
 extension DGTargetType: TargetType {
+    
     public var baseURL: URL {
         return DataConfig.getEntryPoint()
     }
@@ -60,7 +62,8 @@ extension DGTargetType: TargetType {
     
     public var headers: [String : String]? {
         
-        guard let token = UserDefaults.standard.string(forKey: "tokenKey") else { return ["":""] }
+        let keychain = KeychainSwift()
+        guard let token = keychain.get("tokenKey") else { return ["":""] }
         
         switch self {
         case .gistPublic, .getGist, .getComment, .createComment:

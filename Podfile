@@ -10,6 +10,7 @@ target 'TestGists' do
    pod 'Kingfisher', '~> 6.0'
    pod 'IQKeyboardManagerSwift'
    pod 'OAuthSwift', '~> 2.0.0'
+   pod 'KeychainSwift', '~> 19.0'
    
   # Pods for TestGists
 
